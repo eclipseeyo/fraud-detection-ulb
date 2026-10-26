@@ -29,7 +29,6 @@ def plot_feature_importance(model, feature_names, top_n=15):
     """Строим график важности признаков для XGBoost"""
     importances = model.feature_importances_
     
-    # Создаем DataFrame для удобства
     feat_imp = pd.DataFrame({
         'Feature': feature_names,
         'Importance': importances
